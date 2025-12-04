@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Power BI Report</title>
+  <style>
+    /* Simple responsive container */
+    body { margin:0; font-family:system-ui,Segoe UI,Arial; background:#f7f7f7; color:#111; }
+    header { padding:16px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+    .container { max-width:1200px; margin:20px auto; padding:0 16px; }
+    h1 { margin:0 0 8px; font-size:20px; }
+    .frame-wrap { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.06); }
+    /* Keep iframe height large enough for desktop, smaller on phones */
+    iframe { width:100%; height:80vh; border:0; display:block; min-height:560px; }
+    @media (max-width:600px) {
+      iframe { height:70vh; min-height:420px; }
+    }
+    .note { font-size:13px; color:#444; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Power BI Dashboard</h1>
+      <div class="note">Report published publicly using Power BI "Publish to web". Page navigation is available in the embedded report.</div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <div class="frame-wrap" aria-hidden="false">
+      <!-- REPLACE the src value below with your publish-to-web URL -->
+      <iframe
+        title="Power BI Report"
+        src=""https://app.powerbi.com/view?r=eyJrIjoiMmJmYjI5MzUtMmRmYy00MDQxLTg4NGEtZGFkNGU1Y2FlMmVmIiwidCI6ImU0MDRjMzE0LTI1YjUtNDgzYy05Njg1LTcxZTlmMjM4MWY5MCJ9""
+        allowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </main>
+</body>
+</html>
